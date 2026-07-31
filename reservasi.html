@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservasi - Cafe Zafa</title>
+    <link rel="icon" type="image/png/svg" href="logo-cafezafa-svg.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html">Beranda</a>
+            <a href="menu.html">Menu</a>
+            <a href="owner.html">Owner Kami</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Formulir Reservasi Meja</h1>
+        <p>Silakan isi formulir di bawah ini untuk booking meja atau ruangan di Cafe Zafa.</p>
+
+        <form action="#">
+            <p>
+                <label for="nama">Nama Lengkap:</label><br>
+                <input type="text" name="nama" id="nama" minlength="2" maxlength="50" placeholder="Masukkan nama Anda" required>
+            </p>
+
+            <p>
+                <label for="email">Email:</label><br>
+                <input type="email" name="email" id="email" placeholder="contoh@gmail.com" required>
+            </p>
+
+            <p>
+                <label for="telepon">Nomor Telepon / WA:</label><br>
+                <input type="tel" name="telepon" id="telepon" minlength="10" maxlength="15" placeholder="08123456789" required>
+            </p>
+
+            <p>
+                <label for="tanggal">Tanggal Kedatangan:</label><br>
+                <input type="date" name="tanggal" id="tanggal" required>
+            </p>
+
+            <p>
+                <label for="jam">Jam Kedatangan:</label><br>
+                <input type="time" name="jam" id="jam" required>
+            </p>
+
+            <!-- PILIHAN AREA DUDUK -->
+            <fieldset>
+                <legend>Pilihan Area / Ruangan</legend>
+
+                <input type="radio" name="area" id="indoor" value="indoor" required>
+                <label for="indoor">Indoor Room (AC)</label><br>
+
+                <input type="radio" name="area" id="outdoor" value="outdoor">
+                <label for="outdoor">Outdoor Room (Smoking Area)</label><br>
+
+                <input type="radio" name="area" id="vip" value="vip">
+                <label for="vip">VIP Room</label>
+            </fieldset>
+
+            <br>
+
+            <p>
+                <label for="catatan">Catatan Tambahan:</label><br>
+                <textarea name="catatan" id="catatan" rows="5" cols="40" placeholder="Masukkan catatan tambahan (misal: acara ulang tahun, butuh baby chair, dll)"></textarea>
+            </p>
+
+            <p>
+                <button type="submit">Kirim Form</button>
+                <button type="reset">Reset Form</button>
+            </p>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Cafe Zafa. All rights reserved.</p>
+    </footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
